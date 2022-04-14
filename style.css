@@ -1,0 +1,313 @@
+picture {
+    width:100% }
+
+
+li{
+    display: inline;
+}
+
+nav{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 60rem;
+    font-family:'Raleway', sans-serif;
+    background-color: #edd7c8;
+    color: black;
+}
+
+.close nav{
+    display: flex;
+}
+
+nav ul{
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 1 1 2rem;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #edd7c8;
+    font-size: 30px;
+}
+
+.close nav ul{
+    display:flex;
+    flex-direction: column;
+}
+
+a{
+    display: inline;
+   text-decoration: none;
+   color: black;
+   font-family: 'Raleway', sans-serif;
+   padding: 2rem;
+}
+
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+    text-decoration-color: #507882;
+}
+
+
+.menu-icon{
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    stroke: #507882;
+    background-color: #edd7c8;
+    width: 60px;
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 2;
+}
+.menu-icon line {
+    stroke: #507882;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    transform-origin: center;
+    transition: transform 300ms ease;
+  }
+  
+  .menu-icon line:first-child {
+    transform: translateY(16%);
+  }
+  
+  .menu-icon line:last-child {
+    transform: translateY(-16%);
+  }
+  
+  /* JavaScript toggles a "close" class on the <nav> when the menu-icon is clicked */
+  nav.close {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  nav.close .menu-icon {
+    margin: 1rem 0 0 1rem;
+    width: calc(80px - 3rem);
+  }
+  
+  .close line:first-child {
+    transform: rotate(135deg);
+  }
+  
+  .close line:last-child {
+    transform: rotate(-135deg);
+  }
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    max-width: 60;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close .hero-text{
+    display: inherit;
+}
+
+h1 {
+    font-family: 'Euphoria Script', cursive;
+    color: #507882
+    }
+
+.font2{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: #507882;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Euphoria Script', cursive;
+    color: #507882;
+}
+
+a:hover{
+    color: #507882;
+}
+
+.button{
+    background-color: #e1eff0;
+    text-align:center;
+    color: black;
+    padding: 8px 15px;
+    font-size: 20px; 
+    border-radius: 10px;
+
+}
+
+.button:hover {
+    background-color: #edd7c8;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.cards{
+    display: flex; 
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card{
+    display:flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .cards {
+    display: flex;
+    margin: 3rem var(--gutter) 10rem;
+ }
+ 
+ .card a {
+    text-decoration: none;
+    color: #fff;
+ }
+ 
+ .card {
+    margin: 3rem .75rem;
+    position: relative;
+    flex: 20%;
+ }
+ 
+ .card:last-child {
+    margin-right: 0;
+ }
+ 
+ .card .overlay {
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0;
+ }
+ 
+ .card .overlay p {
+    margin: 1em 1rem 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #fff
+ }
+ 
+ .card:hover .overlay {
+    opacity: 1;
+ }
+
+ .font4 {
+    font-family: 'Euphoria Script', cursive;
+    color: #507882;
+    font-size: 30px;
+    }
+
+ .font5 {
+    font-family: 'Raleway', sans-serif;
+    color: #507882;
+    font-size: 50px;
+    }
+
+.p2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    font-size: 20px;
+}
+
+.scrip {
+    font-family: 'Raleway', sans-serif;
+    color: #507882;
+    font-size: 30px;
+    }
+
+aside{
+    background-color: #f0e9df;
+}
+
+@media (min-width: 600px) {
+    
+        .menu-icon{
+            display: none;
+        }
+
+        nav{
+            display: block;
+            position: static;
+            height: auto;
+            background-color: transparent;
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cards {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      
+        .cards .card {
+          flex: 1 1 40%;
+        }
+      }
+
+ @media (min-width: 800px) {
+      
+    }
+
+    
+ @media (min-width: 1100px) {
+        .cards {
+          flex-wrap: nowrap;
+        }
+    }
+
+
+    
